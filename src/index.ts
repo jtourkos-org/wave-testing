@@ -20,7 +20,7 @@ const users = [
 ];
 
 app.get("/users/:id", (req: Request, res: Response) => {
-  const user = users.find((u) => u.id === req.params.userId);
+  const user = users.find((u) => u.id === req.params.id);
 
   if (user) {
     res.json(user);
