@@ -13,6 +13,10 @@ app.get("/health", (_req: Request, res: Response) => {
   res.json({ status: "ok" });
 });
 
+app.get("/tag-11", (_req: Request, res: Response) => {
+  res.json({ tag: "11", message: "Tag 11 endpoint" });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
